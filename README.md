@@ -57,6 +57,9 @@ torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 48.00 MiB (GP
 
 since rtx1650 is 4gib, it seems hard to train. But it seems that the training process is well-structured.
 
+
+### citation ###
+
 @article{nuscenes2019,
   title={nuScenes: A multimodal dataset for autonomous driving},
   author={Holger Caesar and Varun Bankiti and Alex H. Lang and Sourabh Vora and 
@@ -66,7 +69,6 @@ since rtx1650 is 4gib, it seems hard to train. But it seems that the training pr
   year={2019}
 }
 
-### citation ###
 @article{fong2021panoptic,
   title={Panoptic nuScenes: A Large-Scale Benchmark for LiDAR Panoptic Segmentation and Tracking},
   author={Fong, Whye Kit and Mohan, Rohit and Hurtado, Juana Valeria and Zhou, Lubing and Caesar, Holger and
