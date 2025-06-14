@@ -55,6 +55,7 @@ Traceback (most recent call last):
 torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 48.00 MiB (GPU 0; 4.00 GiB total capacity; 6.88 GiB already allocated; 0 bytes free; 6.94 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
 ```
 
+since rtx1650 is 4gib, it seems hard to train. But it seems that the training process is well-structured.
 
 @article{nuscenes2019,
   title={nuScenes: A multimodal dataset for autonomous driving},
