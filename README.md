@@ -42,15 +42,15 @@ Done reverse indexing in 50.5 seconds.
   0%|          | 3/34149 [00:01<5:01:35,  1.89it/s]
 [DEBUG] Loaded 3 multiview samples
 Traceback (most recent call last):
-  File "C:\Users\qnckd\PycharmProjects\acml\down_conference\train.py", line 132, in <module>
+  File "...\train.py", line 132, in <module>
     occ_feat = occupancy_decoder(gaussian_embed, voxel_coords)
-  File "C:\Users\qnckd\PycharmProjects\acml\.venv\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+  File "...\.venv\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
     return forward_call(*args, **kwargs)
-  File "C:\Users\qnckd\PycharmProjects\acml\down_conference\gaussian_encoder\gaussian_decoder\gaussian_decoder.py", line 50, in forward
+  File "...\gaussian_encoder\gaussian_decoder\gaussian_decoder.py", line 50, in forward
     dist = chunked_cdist(xyz, anchor_grid, chunk_size=512)  # (Nv, N)
-  File "C:\Users\qnckd\PycharmProjects\acml\down_conference\utils\ops.py", line 20, in chunked_cdist
+  File "...\utils\ops.py", line 20, in chunked_cdist
     dist_chunk = torch.cdist(chunk, anchor_grid)  # (chunk_size, N)
-  File "C:\Users\qnckd\PycharmProjects\acml\.venv\lib\site-packages\torch\functional.py", line 1222, in cdist
+  File "...\.venv\lib\site-packages\torch\functional.py", line 1222, in cdist
     return _VF.cdist(x1, x2, p, None)  # type: ignore[attr-defined]
 torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 48.00 MiB (GPU 0; 4.00 GiB total capacity; 6.88 GiB already allocated; 0 bytes free; 6.94 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
 ```
