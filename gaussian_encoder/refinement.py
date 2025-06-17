@@ -6,7 +6,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from down_conference.config import config
+from config import config
 
 class SparseGaussian3DRefinement(nn.Module):
     def __init__(self, hidden_dim=64):
