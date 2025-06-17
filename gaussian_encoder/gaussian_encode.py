@@ -2,10 +2,10 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from down_conference.config import config
-from down_conference.gaussian_encoder.deformable_attention import DeformableAttentionWithSpconv
-from down_conference.gaussian_encoder.keypoint_generate import SparseGaussian3DKeyPointsGenerator
-from down_conference.gaussian_encoder.refinement import SparseGaussian3DRefinement
+from config import config
+from gaussian_encoder.deformable_attention import DeformableAttentionWithSpconv
+from gaussian_encoder.keypoint_generate import SparseGaussian3DKeyPointsGenerator
+from gaussian_encoder.refinement import SparseGaussian3DRefinement
 
 class GaussianEncoder(nn.Module):  # (B, N, 11) → (B, N, D)
     def __init__(self, input_dim=11, embed_dim=128):
