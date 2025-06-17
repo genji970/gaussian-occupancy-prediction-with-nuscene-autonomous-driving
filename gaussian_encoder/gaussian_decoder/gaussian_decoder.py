@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from down_conference.utils.ops import *
+from utils.ops import *
 
 class OccupancyDecoder(nn.Module):
     def __init__(self, embed_dim=11, hidden_dim=128, num_classes=18):
