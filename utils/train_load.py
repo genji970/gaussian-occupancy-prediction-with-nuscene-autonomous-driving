@@ -6,7 +6,7 @@ from torch.utils.data import Dataset, DataLoader
 from collections import Counter
 from typing import Dict, List, Tuple
 from nuscenes.nuscenes import NuScenes
-from down_conference.data.data_process import NuScenes
+from data.data_process import NuScenes
 
 from torch.utils.data import Dataset
 from nuscenes.nuscenes import NuScenes
