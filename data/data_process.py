@@ -20,10 +20,10 @@ from torch.utils.data import DataLoader
 from typing import List, Dict
 from tqdm import tqdm
 
-from down_conference.config import config
+from config import config
 from nuscenes.nuscenes import NuScenes
 
-from down_conference.data.data_func import load_all_lidar_samples , load_multiview_samples , camera_visualization
+from data.data_func import load_all_lidar_samples , load_multiview_samples , camera_visualization
 
 nusc = NuScenes(version='v1.0-trainval', dataroot='D:/nuscene_data', verbose=True)
 
