@@ -87,7 +87,7 @@ from neck.neck_generate import sample_token_list
 from lifter.lifter_generate import *
 
 from utils.train_load import OccupancyDataset
-from gaussian_encoder.gaussian_encode import GaussianEncoder
+from down_conference.gaussian_encoder.gaussian_encode import GaussianEncoder
 from gaussian_encoder.gaussian_decoder.gaussian_decoder import OccupancyDecoder
 from head.head import OccupancyHead
 
