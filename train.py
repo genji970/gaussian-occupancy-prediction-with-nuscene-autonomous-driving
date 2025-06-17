@@ -79,17 +79,17 @@ import torch.nn.functional as F
 from torch.utils.data import DataLoader
 from torch.cuda.amp import autocast, GradScaler
 
-from down_conference.config import config
+from config import config
 
-from down_conference.data.data_process import nusc, camera_data
-from down_conference.backbone.backbone_generate import features
-from down_conference.neck.neck_generate import sample_token_list
-from down_conference.lifter.lifter_generate import *
+from data.data_process import nusc, camera_data
+from backbone.backbone_generate import features
+from neck.neck_generate import sample_token_list
+from lifter.lifter_generate import *
 
-from down_conference.utils.train_load import OccupancyDataset
-from down_conference.gaussian_encoder.gaussian_encode import GaussianEncoder
-from down_conference.gaussian_encoder.gaussian_decoder.gaussian_decoder import OccupancyDecoder
-from down_conference.head.head import OccupancyHead
+from utils.train_load import OccupancyDataset
+from gaussian_encoder.gaussian_encode import GaussianEncoder
+from gaussian_encoder.gaussian_decoder.gaussian_decoder import OccupancyDecoder
+from head.head import OccupancyHead
 
 
 # ===== 1. 모델 구성 =====
