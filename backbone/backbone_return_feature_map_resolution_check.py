@@ -1,8 +1,8 @@
 import torch
-from down_conference.config import config
+from config import config
 from mmseg.registry import MODELS
 from mmseg.models.backbones import SwinTransformer
-from down_conference.backbone.cfg import backbone_cfg
+from backbone.cfg import backbone_cfg
 # 2. backbone 생성
 backbone = MODELS.build(backbone_cfg) # backbone ouput : feature
 backbone = backbone.to(torch.device('cuda'))
