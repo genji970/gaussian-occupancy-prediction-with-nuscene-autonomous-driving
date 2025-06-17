@@ -1,4 +1,4 @@
-from down_conference.config import config
+from config import config
 
 neck_cfg = dict(
     type='FPN',
