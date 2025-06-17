@@ -4,8 +4,8 @@ from torch import nn
 from torch.utils.data import DataLoader
 from typing import List, Dict , Tuple
 
-from down_conference.config import config
-from down_conference.backbone.cfg import backbone_cfg
+from config import config
+from backbone.cfg import backbone_cfg
 
 def extract_multiview_features(backbone: nn.Module, images: torch.Tensor) -> List[torch.Tensor]:
     multiview_features = []
