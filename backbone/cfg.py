@@ -1,4 +1,4 @@
-from down_conference.config import config
+from config import config
 
 # 1. backbone 설정
 backbone_cfg = dict(
