@@ -1,4 +1,4 @@
-from down_conference.config import config
+from config import config
 
 lifter_cfg = dict(
     type=config['lifter_cfg_type'],
