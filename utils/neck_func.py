@@ -2,9 +2,9 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from typing import List, Dict, Tuple
-from down_conference.neck.cfg import neck_cfg
+from neck.cfg import neck_cfg
 
-from down_conference.config import config
+from config import config
 
 
 def neck_process(
