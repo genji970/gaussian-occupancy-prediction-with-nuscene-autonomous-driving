@@ -1,6 +1,6 @@
 import torch
 
-from down_conference.config import config
+from config import config
 
 def scatter_to_grid(features, coords, grid_size, mode='mean'):
     """
