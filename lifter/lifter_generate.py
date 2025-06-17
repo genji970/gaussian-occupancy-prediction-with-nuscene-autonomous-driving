@@ -1,10 +1,10 @@
 import torch
 
-from down_conference.config import config
-from down_conference.lifter.lifter_func import AnchorMultiViewLifter
-from down_conference.neck.neck_generate import neck_features
-from down_conference.utils.lifter_func import lifter_preprocess
-from down_conference.neck.neck_generate import cam_Ks_batch , cam_Ts_batch
+from config import config
+from lifter.lifter_func import AnchorMultiViewLifter
+from neck.neck_generate import neck_features
+from utils.lifter_func import lifter_preprocess
+from neck.neck_generate import cam_Ks_batch , cam_Ts_batch
 
 # lifter 클래스 인스턴스 생성
 lifter = AnchorMultiViewLifter(
