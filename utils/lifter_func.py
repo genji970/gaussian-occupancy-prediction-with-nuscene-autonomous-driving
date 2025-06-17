@@ -4,7 +4,7 @@ from typing import List, Dict
 import torch
 import torch.nn as nn
 
-from down_conference.config import config
+from config import config
 
 def lifter_preprocess(
     neck_features: torch.Tensor,  # (B, num_cams, C, H, W)
