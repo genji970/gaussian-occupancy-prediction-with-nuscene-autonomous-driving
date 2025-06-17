@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-from down_conference.utils.head_func import scatter_to_grid
+from utils.head_func import scatter_to_grid
 
 class OccupancyHead(nn.Module):
     def __init__(self, in_dim=64, grid_size=(100, 100, 8), num_classes=18):
