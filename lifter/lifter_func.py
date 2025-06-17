@@ -8,7 +8,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
-from down_conference.config import config
+from config import config
 
 @MODELS.register_module()
 class AnchorMultiViewLifter(BaseModule):
