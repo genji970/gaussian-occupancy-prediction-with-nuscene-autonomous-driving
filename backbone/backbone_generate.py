@@ -2,11 +2,11 @@ from mmseg.registry import MODELS
 from mmseg.models.backbones import SwinTransformer
 import torch
 
-from down_conference.backbone.cfg import backbone_cfg
+from backbone.cfg import backbone_cfg
 
-from down_conference.config import config
-from down_conference.data.data_process import camera_data
-from down_conference.utils.backbone_func import process_camera_data_batch
+from config import config
+from data.data_process import camera_data
+from utils.backbone_func import process_camera_data_batch
 
 # 2. backbone 생성
 backbone = MODELS.build(backbone_cfg) # backbone ouput : feature
