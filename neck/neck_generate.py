@@ -5,13 +5,13 @@ from mmdet.models.necks import FPN
 from mmdet.registry import MODELS
 import torch
 
-from down_conference.neck.cfg import neck_cfg
+from neck.cfg import neck_cfg
 
-from down_conference.config import config
-from down_conference.utils.neck_func import backproject_to_voxel
-from down_conference.data.data_process import camera_data
-from down_conference.backbone.backbone_generate import features
-from down_conference.utils.neck_func import neck_process
+from config import config
+from utils.neck_func import backproject_to_voxel
+from data.data_process import camera_data
+from backbone.backbone_generate import features
+from utils.neck_func import neck_process
 """
 
 args : features: (List of List of Tensor)
