@@ -1,5 +1,7 @@
 # gaussian-occupancy-prediction-with-nuscene
 
+Due to oom issue, and I think it issue unsolvable with my current devices, I stop making model better in teaining,inference opt. So I just made pipeline which has no ability to learn and make good representations
+
 environment
 ```python
 nvidia-smi
